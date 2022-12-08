@@ -1887,32 +1887,32 @@ local Main = Win:Tab("• Main", "rbxassetid://8825667942")
 
 local A = Main:NewSection("HElP For SC")
 
+local Lizet = {
+      "Bloxfruit";
+      "AllMap";
+}
 
-A:TextBox("Key", "Put key here", function(value)
-    _G.Key = value
+local TestDropdown = A:Dropdown("Select Mode", Lizet, function(value)
+_G.Key = value
 end)
 
-A:Button("Check Key", function(t)
+A:Button("Mode", function(t)
     Key()
+    Key1()
+    
 end)
 
 function Key()
-    if _G.Key == "Panad" or "ปัน" or "ชัย" or "เค" then
-        rconsoleprint("@@WHITE@@")
-        rconsoleprint("          <------------------>          \n")
-        rconsoleprint("               Key System          \n")
-        rconsoleprint("          <------------------>          \n\n")
-        rconsoleprint("@@GREEN@@")
-        rconsoleprint("          [+] Key is Nice \n")
+    if _G.Key == "Bloxfruit" then
         game.CoreGui:FindFirstChild("BlackTrap"):Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/KongFreeiSus/main/README.md"))()
-    else
-        rconsoleprint("@@WHITE@@")
-        rconsoleprint("          <------------------>          \n")
-        rconsoleprint("               Key System          \n")
-        rconsoleprint("          <------------------>          \n\n")
-        rconsoleprint("@@RED@@")
-        rconsoleprint("            [+] Key is Bad \n")
+  		 loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/KongFreeiSus/main/README.md"))()
+    end
+end
+
+function Key1()
+    if _G.Key == "AllMap" then
+        game.CoreGui:FindFirstChild("BlackTrap"):Destroy()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/All/main/README.md"))()
     end
 end
 
