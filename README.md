@@ -1890,6 +1890,7 @@ local A = Main:NewSection("HElP For SC")
 local Lizet = {
       "Bloxfruit";
       "AllMap";
+      "Bloxfruit Kaitun";
 }
 
 local TestDropdown = A:Dropdown("Select Mode", Lizet, function(value)
@@ -1899,20 +1900,30 @@ end)
 A:Button("Mode", function(t)
     Key()
     Key1()
+    Key2()
     
 end)
 
 function Key()
-    if _G.Key == "Bloxfruit" then
+    if _G.Key == "AllMap" then
         game.CoreGui:FindFirstChild("BlackTrap"):Destroy()
-  		 loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/KongFreeiSus/main/README.md"))()
+  		 loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/All/main/README.md"))()
     end
 end
 
 function Key1()
-    if _G.Key == "AllMap" then
+    if _G.Key == "Bloxfruit" then
+       
         game.CoreGui:FindFirstChild("BlackTrap"):Destroy()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/All/main/README.md"))()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/KongFreeiSus/main/README.md"))()
+    end
+end
+
+function Key2()
+    if _G.Key == "Bloxfruit Kaitun" then
+       
+        game.CoreGui:FindFirstChild("BlackTrap"):Destroy()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/kaitun/main/README.md"))()
     end
 end
 
