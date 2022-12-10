@@ -1891,6 +1891,7 @@ local Lizet = {
       "Bloxfruit";
       "AllMap";
       "Bloxfruit Kaitun";
+      "Ro Ghoul";
 }
 
 local TestDropdown = A:Dropdown("Select Mode", Lizet, function(value)
@@ -1901,6 +1902,7 @@ A:Button("Mode", function(t)
     Key()
     Key1()
     Key2()
+    Key3()
     
 end)
 
@@ -1916,6 +1918,14 @@ function Key1()
        
         game.CoreGui:FindFirstChild("BlackTrap"):Destroy()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/KongFreeiSus/main/README.md"))()
+    end
+end
+
+function Key3()
+    if _G.Key == "Ro Ghoul" then
+       
+        game.CoreGui:FindFirstChild("BlackTrap"):Destroy()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Whacaranon/Ro/main/README.md"))()
     end
 end
 
